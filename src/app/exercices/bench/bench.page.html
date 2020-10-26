@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Bench</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+  <div *ngIf="developer">
+    <ion-item>
+      <ion-label position="stacked">Name </ion-label>
+      <ion-input [(ngModel)]="exercice.name" placeholder="Exercice Name"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Set 1</ion-label>
+      <ion-input [(ngModel)]="exercice.set1" placeholder="Set1"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Set 2</ion-label>
+      <ion-input [(ngModel)]="exercice.set2" placeholder="Set2"></ion-input>
+    </ion-item>    <ion-item>
+      <ion-label position="stacked">Set 3</ion-label>
+      <ion-input [(ngModel)]="exercice.set3" placeholder="Set4"></ion-input>
+    </ion-item>    <ion-item>
+      <ion-label position="stacked">Set 4</ion-label>
+      <ion-input [(ngModel)]="exercice.set4" placeholder="Set4"></ion-input>
+    </ion-item>
+    <ion-button expand="block" (click)="updateDeveloper()">Update Developer Info</ion-button>
+  </div>
+</ion-content>

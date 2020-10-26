@@ -1,0 +1,151 @@
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Exercices</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+ 
+  <ion-segment [(ngModel)]="selectedView">
+    <ion-segment-button value="devs">
+      <ion-label>Exercice</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+ 
+  <div [ngSwitch]="selectedView">
+    <div *ngSwitchCase="'devs'">
+      <ion-item>
+        <ion-label position="stacked">What\'s your name?</ion-label>
+        <ion-input [(ngModel)]="exercice.name" placeholder="Exercice Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">What are your special skills (comma separated)?</ion-label>
+        <ion-input [(ngModel)]="exercice.skills" placeholder="Special Skills"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set1</ion-label>
+        <ion-input [(ngModel)]="exercice.set1" placeholder="set1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set2</ion-label>
+        <ion-input [(ngModel)]="exercice.set2" placeholder="set2"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set3</ion-label>
+        <ion-input [(ngModel)]="exercice.set3" placeholder="set3"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set4</ion-label>
+        <ion-input [(ngModel)]="exercice.set4" placeholder="set4"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="addExercices()">Add Exercice Info</ion-button>
+ 
+      <ion-list>
+        <ion-item button *ngFor="let dev of exercices" [routerLink]="['/', 'exercices', dev.id]">
+          <ion-avatar slot="start">
+            <img [src]="dev.skills">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ dev.name }}</h2>
+            <p>{{ dev.skills }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div>
+ 
+  
+
+ 
+      
+    </div>
+ 
+</ion-content> -->
+<!-- <ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>Developers</ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content padding>
+ 
+  <ion-segment [(ngModel)]="selectedView">
+    <ion-segment-button value="devs">
+      <ion-label>Exercices</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="info">
+      <ion-label>Info</ion-label>
+    </ion-segment-button>
+  </ion-segment> -->
+ 
+  <!-- <div [ngSwitch]="selectedView">
+    <div *ngSwitchCase="'devs'">
+      <ion-item>
+        <ion-label position="stacked">Exercice name?</ion-label>
+        <ion-input [(ngModel)]="exercice.name" placeholder="Exercice Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Description</ion-label>
+        <ion-input [(ngModel)]="exercice.skills" placeholder="Special Skills"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set1</ion-label>
+        <ion-input [(ngModel)]="exercice.set1" placeholder="set1"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set2</ion-label>
+        <ion-input [(ngModel)]="exercice.set2" placeholder="set2"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set3</ion-label>
+        <ion-input [(ngModel)]="exercice.set3" placeholder="set3"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Set4</ion-label>
+        <ion-input [(ngModel)]="exercice.set4" placeholder="set4"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="addExercices()">Add Exercice Info</ion-button>
+      <ion-list>
+        <ion-item button *ngFor="let dev of exercices" [routerLink]="['/', 'exercices', dev.id]">
+          <ion-avatar slot="start">
+          </ion-avatar>
+          <ion-label>
+            <h2>{{ dev.name }}</h2>
+            <p>{{ dev.skills }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div> -->
+ 
+    <!-- <div *ngSwitchCase="'info'"> -->
+<ion-content> 
+  <!-- <ion-content padding>
+    <div>
+      <ion-item>
+        <ion-label position="stacked">Bench</ion-label>
+        <ion-input [(ngModel)]="exercice.name" placeholder="Developer Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">set 1</ion-label>
+        <ion-input [(ngModel)]="exerice.set1" placeholder="Set1"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="updateDeveloper()">Update Developer Info</ion-button>
+    </div> -->
+
+  <h2>{{ dev.name }}</h2>
+  <h2>set 1 {{ dev.set1 }}</h2>
+      <!-- <div>
+       <ion-list>
+        <ion-item *ngFor="let exercice of exercices">
+          <ion-label>
+            <h2>{{ exercice.name }}</h2>
+            <p>set 1 {{ dev.set1 }}</p>
+            <p>set 2 {{ dev.set2 }}</p>
+            <p>set 3 {{ dev.set3 }}</p>
+            <p>set 4 {{ dev.set4 }}</p>
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </div> -->
+
+ 
+</ion-content>

@@ -1,0 +1,8 @@
+{
+  "name": "gym",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}
